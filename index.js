@@ -13,7 +13,7 @@ import dotenv from "dotenv";
 import  cors from 'cors';
 // Asign the All Resource in App
 const app = express();
-const port = process.env.PORT||3000;
+const port = process.env.PORT;
 
 // ENV configuration
  dotenv.config();
