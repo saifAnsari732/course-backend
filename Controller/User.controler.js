@@ -98,7 +98,7 @@ export const purchases = async (req, res) => {
     }
     const courseData = await Course.find({
       _id: { $in: purchasedCourseId },
-    });
+    })
 
     res.status(200).json({ purchased, courseData });
   } catch (error) {
